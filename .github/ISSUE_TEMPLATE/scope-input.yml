@@ -1,0 +1,65 @@
+name: Scope Input
+description: "Submit a browser automation pain point, use case, or scope proposal"
+title: "[Scope] "
+labels: ["scope", "needs-research"]
+body:
+  - type: input
+    id: area
+    attributes:
+      label: Area
+      placeholder: "e.g. cross-browser profile management"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+    validations:
+      required: true
+  - type: input
+    id: who_affected
+    attributes:
+      label: Who is affected
+  - type: checkboxes
+    id: observed_during
+    attributes:
+      label: Observed during
+      options:
+        - label: Development
+        - label: Testing
+        - label: Runtime
+        - label: Deployment
+        - label: Maintenance
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Frequency
+      options:
+        - Rare
+        - Sometimes
+        - Common
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Current workaround
+  - type: checkboxes
+    id: benefit
+    attributes:
+      label: Expected benefit
+      options:
+        - label: Stability
+        - label: Reproducibility
+        - label: Speed
+        - label: Developer experience
+  - type: dropdown
+    id: candidate_action
+    attributes:
+      label: Candidate action
+      options:
+        - in scope
+        - out of scope
+        - deferred
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes

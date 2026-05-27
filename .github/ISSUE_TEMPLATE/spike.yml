@@ -1,0 +1,33 @@
+name: Spike
+description: "Time-boxed research or investigation with a defined output"
+title: "[Spike] "
+labels: ["needs-research"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: The specific question this spike answers
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why this needs investigation now
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: The artifact that closes this spike (doc, ADR, prototype, decision comment)
+    validations:
+      required: true
+  - type: input
+    id: timebox
+    attributes:
+      label: Timebox
+      placeholder: "e.g. 2 hours, 1 day"
+    validations:
+      required: true

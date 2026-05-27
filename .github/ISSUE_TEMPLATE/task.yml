@@ -1,0 +1,31 @@
+name: Task
+description: "A concrete piece of work with a clear done state"
+title: "[Task] "
+labels: []
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What
+      description: What needs to be done
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: Why this work matters or what it unblocks
+    validations:
+      required: true
+  - type: textarea
+    id: done_when
+    attributes:
+      label: Done when
+      description: Bullet list of acceptance criteria
+    validations:
+      required: true
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of scope
+      description: What this issue explicitly does not cover

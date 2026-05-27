@@ -1,0 +1,31 @@
+name: Feature Request
+description: "Propose an addition to library, rules, or snippets — scope must be confirmed before implementation"
+title: "[Feature] "
+labels: ["proposal", "discussion-needed"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > **Note:** Do not open a pull request until a maintainer has confirmed scope on this issue.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What limitation or gap does this address
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: input
+    id: discussion
+    attributes:
+      label: Linked discussion or decision
+      placeholder: "https://github.com/uips-browser-kit/discussions/..."
